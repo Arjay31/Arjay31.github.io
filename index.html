@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Armand Portfolio Website</title>
+    <style>
+
+    </style>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">Armand</a>
+        <nav>
+            <a href="#home" >Home</a>
+            <a href="#about">About Me</a>
+            <a href="#projects">Projects</a>
+            <a href="#education">Education</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section class="home" id="home">
+        <div class="home-img">
+            <img src="pictures/armand31.png" alt="Armand Profile Picture">
+        </div>
+        <div class="home-content">
+            <h1>Hi, I am <span>Armand</span></h1>
+            
+            <p>Hi! I'm Armand Jay A. Reboton, a 3rd-year computer engineering student with a passion for hardware. I specialize in circuit design, microcontroller programming, and exploring how hardware and software work together.</p>
+            <div class="social-icons">
+                <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+                <a href="#"><i class="fa-brands fa-github"></i></a>
+                <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="about-content">
+            <h2 class="section-title">About Me</h2>
+            <p class="description">This is a brief description about myself. I am a passionate computer engineering student with a love for hardware and technology.</p>
+            <a href="https://github.com/Arjay31" class="read-more-btn">Read More</a>
+        </div>
+        <div class="about-image">
+            <img src="pictures/armand4.png" alt="About Me" />
+        </div>
+    </section>
+    
+    
+
+    <section id="projects">
+        <h2 class="section-title">Projects</h2>
+        <div class="projects">
+            <div class="project-item">
+                <img src="pictures/project1.jpg" alt="Project 1">
+                <p>sumo bot ni boss</p>
+            </div>
+            <div class="project-item">
+                <img src="pictures/project2.jpg" alt="Project 2">
+                <p>kina unhang sumo\bot</p>
+            </div>
+            <div class="project-item">
+                <img src="pictures/project3.jpg" alt="Project 3">
+                <p>picture sa mi lods</p>
+            </div>
+            <div class="project-item">
+                <img src="pictures/project4.jpg" alt="Project 4">
+                <p>Description of Project 4</p>
+            </div>
+            <div class="project-item">
+                <img src="pictures/project4.png" alt="Project 4">
+                <p>trainer ni dol</p>
+            </div>
+            <div class="project-item">
+                <img src="pictures/project3.jpg" alt="Project 4">
+                <p>Description of Project 4</p>
+            </div>
+            <div class="project-item">
+                <img src="pictures/project4.png" alt="Project 4">
+                <p></p>
+            </div>
+            <div class="project-item">
+                <img src="pictures/project4.png" alt="Project 4">
+                <p></p>
+            </div>
+        </div>
+    </section>
+
+    <section id="education">
+        <h2 class="section-title">Education</h2>
+        <div class="about">
+            <p>comming soon</p>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2 class="section-title">Contact</h2>
+        <div class="contact">
+            <p class="contact-info">Email: armandreboton378@gmail.com</p>
+            <p class="contact-info">Phone: 09273971336</p>
+    
+            <form action="#" method="post" class="contact-form">
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+    
+                <label for="message">Your Message:</label>
+                <textarea id="message" name="message" rows="5" placeholder="Write your message here..." required></textarea>
+    
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+        </div>
+    </section>
+    
+
+    <script>
+        let lastScrollTop = 0;
+        const header = document.querySelector('header');
+
+        window.addEventListener('scroll', function () {
+            let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+            if (scrollTop > lastScrollTop) {
+                header.style.top = '-80px'; // Adjust this value to match your header height
+            } else {
+                header.style.top = '0';
+            }
+            lastScrollTop = scrollTop;
+        });
+    </script>
+</body>
+</html>
